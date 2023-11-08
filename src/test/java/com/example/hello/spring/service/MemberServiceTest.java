@@ -21,12 +21,9 @@ class MemberServiceTest {
   memberRepository.clearStore(); 를 쓰면 좋지 않은 이유?!!
   -> memberService에서 이미 memberRepository를 사용하고 있고,
   memberRepository.clearStore()의 memberRepository는 다른 인스턴스 (static이라서 가능하다고 함)
+  */
 
-
-
-   */
-
-
+  //태스트를 위해서
   @BeforeEach
   public void beforEach() {
     //DI..!!
